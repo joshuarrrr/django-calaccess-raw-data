@@ -2570,6 +2570,9 @@ class LobbyistContributions1Cd(CalAccessBaseModel):
     Lobbyist contribution disclosure table.
     """
     UNIQUE_KEY = False
+    DOCUMENTCLOUD_PAGES = [
+        DocumentCloud(id="2711614-CalAccessTablesWeb", start_page=92, end_page=93),
+    ]
     filer_id = fields.IntegerField(
         verbose_name='filer ID',
         db_column='FILER_ID',
